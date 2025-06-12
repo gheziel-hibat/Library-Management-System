@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UserCard</class>
+ <widget class="QWidget" name="UserCard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>360</width>
+    <height>280</height>
+   </rect>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QWidget {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      font-family: 'Poppins', sans-serif;
+      padding: 24px 20px 20px 20px;
+    }
+    QLabel#nameLabel {
+      font-weight: 700;
+      font-size: 32pt;
+      color: #111827;
+      margin-bottom: 16px;
+    }
+    QLabel#emailLabel, QLabel#phoneLabel, QLabel#addressLabel, QLabel#borrowLimitLabel {
+      font-weight: 400;
+      font-size: 14pt;
+      color: #6b7280;
+      margin-bottom: 10px;
+    }
+    QLabel#sectionTitle {
+      font-weight: 600;
+      font-size: 18pt;
+      color: #374151;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+      <widget class="QLabel" name="nameLabel">
+        <property name="text"><string>User Name</string></property>
+      </widget>
+    </item>
+    <item>
+      <widget class="QLabel" name="emailLabel">
+        <property name="text"><string>Email: user@example.com</string></property>
+      </widget>
+    </item>
+    <item>
+      <widget class="QLabel" name="phoneLabel">
+        <property name="text"><string>Phone: 123-456-7890</string></property>
+      </widget>
+    </item>
+    <item>
+      <widget class="QLabel" name="addressLabel">
+        <property name="text"><string>Address: 123 Library St, City</string></property>
+      </widget>
+    </item>
+    <item>
+      <widget class="QLabel" name="borrowLimitLabel">
+        <property name="text"><string>Max Borrow Limit: 5</string></property>
+      </widget>
+    </item>
+    <item>
+      <widget class="QLabel" name="sectionTitle">
+        <property name="text"><string>Current Loans</string></property>
+      </widget>
+    </item>
+    <!-- Placeholder: Loan list widget can be added programmatically -->
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

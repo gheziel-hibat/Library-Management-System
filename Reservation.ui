@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReservationCard</class>
+ <widget class="QWidget" name="ReservationCard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>360</width>
+    <height>240</height>
+   </rect>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QWidget {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      font-family: 'Poppins', sans-serif;
+      padding: 20px;
+      transition: box-shadow 0.3s ease;
+    }
+    QWidget:hover {
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+    QLabel#reservationIdLabel {
+      font-weight: 700;
+      font-size: 24pt;
+      color: #111827;
+      margin-bottom: 14px;
+    }
+    QLabel#resourceLabel, QLabel#reserverLabel, QLabel#dateLabel, QLabel#statusLabel {
+      font-weight: 400;
+      font-size: 14pt;
+      color: #6b7280;
+      margin-bottom: 10px;
+    }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="reservationIdLabel">
+     <property name="text">
+      <string>Reservation ID: R-123456</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="resourceLabel">
+     <property name="text">
+      <string>Resource: Example Resource Title</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="reserverLabel">
+     <property name="text">
+      <string>Reserver: John Doe</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="dateLabel">
+     <property name="text">
+      <string>Date: 2024-06-15</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="statusLabel">
+     <property name="text">
+      <string>Status: Active</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

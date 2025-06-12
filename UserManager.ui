@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+UserManager.ui - UI for managing users
+Clean, modern UI with white background, rounded corners, subtle shadows
+Includes search bar, user list, and buttons for add/update/remove
+Ample padding and readable typography with Poppins font
+-->
+<ui version="4.0">
+ <class>UserManagerWidget</class>
+ <widget class="QWidget" name="UserManagerWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QWidget {
+      background: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      font-family: 'Poppins', sans-serif;
+      padding: 20px;
+    }
+    QLineEdit#searchLineEdit {
+      padding: 8px;
+      font-size: 14pt;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+    QListWidget#userListWidget {
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      font-size: 13pt;
+      color: #374151;
+      background: #f9fafb;
+      padding: 8px;
+    }
+    QPushButton {
+      background-color: #3b82f6;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 13pt;
+      margin: 6px;
+      border: none;
+    }
+    QPushButton:hover {
+      background-color: #2563eb;
+    }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+      <widget class="QLineEdit" name="searchLineEdit">
+        <property name="placeholderText">
+          <string>Search users by name...</string>
+        </property>
+      </widget>
+    </item>
+    <item>
+      <widget class="QListWidget" name="userListWidget"/>
+    </item>
+    <item>
+      <layout class="QHBoxLayout" name="buttonLayout">
+        <item>
+          <widget class="QPushButton" name="addUserButton">
+            <property name="text">
+              <string>Add</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="QPushButton" name="updateUserButton">
+            <property name="text">
+              <string>Update</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="QPushButton" name="removeUserButton">
+            <property name="text">
+              <string>Remove</string>
+            </property>
+          </widget>
+        </item>
+      </layout>
+    </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

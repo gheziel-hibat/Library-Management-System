@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ReservationManager.ui - UI for managing reservations
+Clean and modern per Default Design Guidelines:
+- White background with subtle shadows and rounded corners
+- Search input, reservation list, and buttons for creating, fulfilling, and cancelling reservations
+- Spacious layout, readable typography (Poppins font)
+-->
+<ui version="4.0">
+ <class>ReservationManagerWidget</class>
+ <widget class="QWidget" name="ReservationManagerWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>620</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QWidget {
+      background: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+      font-family: 'Poppins', sans-serif;
+      padding: 24px;
+    }
+    QLineEdit#searchLineEdit {
+      padding: 10px;
+      font-size: 15pt;
+      border: 1px solid #d1d5db;
+      border-radius: 10px;
+      margin-bottom: 18px;
+    }
+    QListWidget#reservationListWidget {
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      font-size: 14pt;
+      color: #374151;
+      background: #f9fafb;
+      padding: 10px;
+    }
+    QPushButton {
+      background-color: #2563eb;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 14px;
+      font-weight: 700;
+      font-size: 14pt;
+      margin: 6px 8px;
+      border: none;
+    }
+    QPushButton:hover {
+      background-color: #1e40af;
+    }
+  </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+      <widget class="QLineEdit" name="searchLineEdit">
+        <property name="placeholderText">
+          <string>Search reservations by resource or user...</string>
+        </property>
+      </widget>
+    </item>
+    <item>
+      <widget class="QListWidget" name="reservationListWidget"/>
+    </item>
+    <item>
+      <layout class="QHBoxLayout" name="buttonLayout">
+        <item>
+          <widget class="QPushButton" name="createReservationButton">
+            <property name="text">
+              <string>Create</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="QPushButton" name="fulfillReservationButton">
+            <property name="text">
+              <string>Fulfill</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="QPushButton" name="cancelReservationButton">
+            <property name="text">
+              <string>Cancel</string>
+            </property>
+          </widget>
+        </item>
+      </layout>
+    </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
