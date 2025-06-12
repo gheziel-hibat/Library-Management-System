@@ -23,8 +23,6 @@ public:
     string getVolume() const;
     string getIssue() const;
     string getDOI() const;
-
-    // Override for details including article fields
     string getDetails() const override;
 
 private:
