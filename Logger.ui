@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoggerWidget</class>
+ <widget class="QWidget" name="LoggerWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QWidget {
+      background: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+      font-family: 'Poppins', sans-serif;
+      padding: 24px;
+    }
+    QListWidget#logListWidget {
+      background: #f3f4f6;
+      border-radius: 12px;
+      font-family: "Courier New", monospace;
+      font-size: 13pt;
+      color: #111827;
+      padding: 10px;
+      border: none;
+    }
+    QPushButton {
+      background-color: #3b82f6;
+      color: white;
+      padding: 12px 28px;
+      font-size: 14pt;
+      font-weight: 700;
+      border-radius: 14px;
+      margin: 8px 12px 0 0;
+      border: none;
+    }
+    QPushButton:hover {
+      background-color: #2563eb;
+    }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+      <widget class="QListWidget" name="logListWidget"/>
+    </item>
+    <item>
+      <layout class="QHBoxLayout" name="buttonLayout">
+        <item>
+          <widget class="QPushButton" name="clearLogsButton">
+            <property name="text">
+              <string>Clear Logs</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="QPushButton" name="exportLogsButton">
+            <property name="text">
+              <string>Export Logs</string>
+            </property>
+          </widget>
+        </item>
+      </layout>
+    </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

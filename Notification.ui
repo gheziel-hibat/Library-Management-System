@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NotificationCard</class>
+ <widget class="QWidget" name="NotificationCard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>360</width>
+    <height>180</height>
+   </rect>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QWidget {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      font-family: 'Poppins', sans-serif;
+      padding: 20px;
+    }
+    QLabel#typeLabel {
+      font-weight: 700;
+      font-size: 20pt;
+      color: #111827;
+      margin-bottom: 12px;
+    }
+    QLabel#messageLabel {
+      font-weight: 400;
+      font-size: 14pt;
+      color: #374151;
+      margin-bottom: 8px;
+    }
+    QLabel#timestampLabel {
+      font-weight: 400;
+      font-size: 12pt;
+      color: #6b7280;
+    }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="typeLabel">
+     <property name="text">
+      <string>Notification Type</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="messageLabel">
+     <property name="text">
+      <string>Notification Message</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="timestampLabel">
+     <property name="text">
+      <string>Timestamp: 2024-01-01 12:00:00</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

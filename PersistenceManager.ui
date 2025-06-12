@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+PersistenceManager.ui - UI for managing data persistence
+Clean, modern design with:
+- White background, subtle shadows, rounded corners
+- Buttons to load and save data
+- Status label for operation feedback
+- Responsive vertical layout with readable typography (Poppins font)
+-->
+<ui version="4.0">
+ <class>PersistenceManagerWidget</class>
+ <widget class="QWidget" name="PersistenceManagerWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>280</height>
+   </rect>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QWidget {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      font-family: 'Poppins', sans-serif;
+      padding: 24px;
+    }
+    QPushButton {
+      background-color: #3b82f6;
+      color: white;
+      padding: 12px 26px;
+      border-radius: 14px;
+      font-weight: 700;
+      font-size: 14pt;
+      margin: 10px 0;
+      border: none;
+    }
+    QPushButton:hover {
+      background-color: #2563eb;
+    }
+    QLabel#statusLabel {
+      font-weight: 600;
+      font-size: 14pt;
+      color: #6b7280;
+      margin-top: 20px;
+      min-height: 24px;
+    }
+  </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+      <widget class="QPushButton" name="saveButton">
+        <property name="text">
+          <string>Save Data</string>
+        </property>
+      </widget>
+    </item>
+    <item>
+      <widget class="QPushButton" name="loadButton">
+        <property name="text">
+          <string>Load Data</string>
+        </property>
+      </widget>
+    </item>
+    <item>
+      <widget class="QLabel" name="statusLabel">
+        <property name="text">
+          <string>Status: Ready</string>
+        </property>
+      </widget>
+    </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

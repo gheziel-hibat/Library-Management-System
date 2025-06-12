@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+NotificationManager.ui - UI for viewing and managing notifications
+Clean design with white background, rounded corners, and subtle shadows
+Includes a list of notifications and button to mark all as read
+Uses Poppins font, ample spacing, and clear typography
+-->
+<ui version="4.0">
+ <class>NotificationManagerWidget</class>
+ <widget class="QWidget" name="NotificationManagerWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>620</width>
+    <height>380</height>
+   </rect>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QWidget {
+      background: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      font-family: 'Poppins', sans-serif;
+      padding: 20px;
+    }
+    QListWidget#notificationListWidget {
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      font-size: 14pt;
+      color: #374151;
+      background: #f9fafb;
+      padding: 10px;
+    }
+    QPushButton {
+      background-color: #3b82f6;
+      color: white;
+      padding: 12px 26px;
+      border-radius: 14px;
+      font-weight: 700;
+      font-size: 14pt;
+      margin-top: 16px;
+      border: none;
+    }
+    QPushButton:hover {
+      background-color: #2563eb;
+    }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="mainLayout">
+    <item>
+      <widget class="QListWidget" name="notificationListWidget"/>
+    </item>
+    <item>
+      <widget class="QPushButton" name="markAllReadButton">
+        <property name="text">
+          <string>Mark All as Read</string>
+        </property>
+      </widget>
+    </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

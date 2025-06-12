@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ArticleCard</class>
+ <widget class="QWidget" name="ArticleCard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>360</width>
+    <height>220</height>
+   </rect>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QWidget {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      padding: 20px;
+      font-family: 'Poppins', sans-serif;
+    }
+    QLabel#headlineLabel {
+      font-weight: 700;
+      font-size: 24pt;
+      color: #111827;
+      margin-bottom: 12px;
+    }
+    QLabel#authorLabel, QLabel#journalLabel, QLabel#volumeIssueLabel, QLabel#doilabel, QLabel#descriptionLabel {
+      font-weight: 400;
+      font-size: 12pt;
+      color: #6b7280;
+      margin-bottom: 8px;
+    }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="headlineLabel">
+     <property name="text">
+      <string>Article Title</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="authorLabel">
+     <property name="text">
+      <string>Authors: ...</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="journalLabel">
+     <property name="text">
+      <string>Journal: ...</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="volumeIssueLabel">
+     <property name="text">
+      <string>Volume/... Issue/...</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="doilabel">
+     <property name="text">
+      <string>DOI: ...</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="descriptionLabel">
+     <property name="text">
+      <string>Description goes here...</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

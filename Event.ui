@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EventCard</class>
+ <widget class="QWidget" name="EventCard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>360</width>
+    <height>280</height>
+   </rect>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QWidget {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      font-family: 'Poppins', sans-serif;
+      padding: 24px 20px 20px 20px;
+    }
+    QLabel#titleLabel {
+      font-weight: 700;
+      font-size: 48px;
+      color: #111827;
+      margin-bottom: 16px;
+    }
+    QLabel#descriptionLabel, QLabel#locationLabel, QLabel#dateLabel {
+      font-weight: 400;
+      font-size: 18px;
+      color: #6b7280;
+      margin-bottom: 12px;
+    }
+  </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+      <widget class="QLabel" name="titleLabel">
+        <property name="text">
+          <string>Event Title</string>
+        </property>
+        <property name="wordWrap">
+          <bool>true</bool>
+        </property>
+      </widget>
+    </item>
+    <item>
+      <widget class="QLabel" name="descriptionLabel">
+        <property name="text">
+          <string>Event description goes here...</string>
+        </property>
+        <property name="wordWrap">
+          <bool>true</bool>
+        </property>
+      </widget>
+    </item>
+    <item>
+      <widget class="QLabel" name="dateLabel">
+        <property name="text">
+          <string>Date: 2024-06-01 18:00</string>
+        </property>
+      </widget>
+    </item>
+    <item>
+      <widget class="QLabel" name="locationLabel">
+        <property name="text">
+          <string>Location: Main Library Hall</string>
+        </property>
+      </widget>
+    </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
