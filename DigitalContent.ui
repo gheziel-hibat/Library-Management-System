@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DigitalContentCard</class>
+ <widget class="QWidget" name="DigitalContentCard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>360</width>
+    <height>250</height>
+   </rect>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QWidget {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      font-family: 'Poppins', sans-serif;
+      padding: 20px;
+    }
+    QLabel#titleLabel {
+      font-weight: 700;
+      font-size: 28pt;
+      color: #111827;
+      margin-bottom: 14px;
+    }
+    QLabel#authorLabel, QLabel#fileFormatLabel, QLabel#fileSizeLabel, QLabel#downloadUrlLabel, QLabel#categoryLabel {
+      font-weight: 400;
+      font-size: 14pt;
+      color: #6b7280;
+      margin-bottom: 8px;
+    }
+    QLabel#descriptionLabel {
+      font-weight: 400;
+      font-size: 13pt;
+      color: #374151;
+      margin-top: 12px;
+      word-wrap: true;
+    }
+    QLabel#downloadUrlLabel {
+      text-decoration: underline;
+      color: #1f2937;
+      cursor: pointer;
+    }
+    QLabel#downloadUrlLabel:hover {
+      color: #111827;
+    }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="titleLabel">
+     <property name="text">
+      <string>Digital Content Title</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="authorLabel">
+     <property name="text">
+      <string>Authors: ...</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="fileFormatLabel">
+     <property name="text">
+      <string>File Format: ...</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="fileSizeLabel">
+     <property name="text">
+      <string>File Size: ... MB</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="downloadUrlLabel">
+     <property name="text">
+      <string>Download URL</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="categoryLabel">
+     <property name="text">
+      <string>Category: ...</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="descriptionLabel">
+     <property name="text">
+      <string>Description of digital content goes here...</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

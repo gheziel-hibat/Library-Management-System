@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoanCard</class>
+ <widget class="QWidget" name="LoanCard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>360</width>
+    <height>220</height>
+   </rect>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QWidget {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      font-family: 'Poppins', sans-serif;
+      padding: 20px;
+    }
+    QLabel#loanIdLabel {
+      font-weight: 700;
+      font-size: 24pt;
+      color: #111827;
+      margin-bottom: 12px;
+    }
+    QLabel#resourceTitleLabel, QLabel#userNameLabel, QLabel#loanDateLabel, QLabel#dueDateLabel, QLabel#returnedLabel {
+      font-weight: 400;
+      font-size: 14pt;
+      color: #6b7280;
+      margin-bottom: 8px;
+    }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="loanIdLabel">
+     <property name="text">
+      <string>Loan ID: L-123456</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="resourceTitleLabel">
+     <property name="text">
+      <string>Resource: Book Title</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="userNameLabel">
+     <property name="text">
+      <string>User: John Doe</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="loanDateLabel">
+     <property name="text">
+      <string>Loan Date: 2024-01-01</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="dueDateLabel">
+     <property name="text">
+      <string>Due Date: 2024-01-31</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="returnedLabel">
+     <property name="text">
+      <string>Returned: No</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
