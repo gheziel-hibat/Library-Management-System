@@ -1,2 +1,2 @@
 # Library-Management-System
-a simulation to a system to manage libraries
+a simulation system to manage libraries
